@@ -1,0 +1,17 @@
+#counter {
+	height: 100px;
+	width: 100px;
+	color: #333;
+	background: #EEE;
+	text-align: center;
+	font-size: 40px;
+	font-weight: bold;
+	padding: 20px;
+}
+#game {
+	list-style: none;
+}
+#game button {
+	width: 150px;
+	margin: 10px 0;
+}
