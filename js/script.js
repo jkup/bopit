@@ -1,12 +1,19 @@
 +function ($) {
   'use strict';
 
-  $('#game').find('a').on('click', function(e) {
+  $(document).ready(function() {
+  	Bopit.advance();
+  });
+
+  $('#game').find('button').on('click', function() {
   	var $this = $(this);
-
-  	e.preventDefault();
-
   	console.log($this.data('action'));
+
+  	if ($this.data('action') === Bopit.action) {
+  		Bopit.advance();
+  	} else {
+  		Bopit.restart();
+  	}
   });
 
 }(jQuery);
