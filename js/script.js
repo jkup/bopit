@@ -28,9 +28,7 @@
   	}
   });
 
-  $('body').on('click', '#start-over', function(e) {
-    e.preventDefault();
-
+  $('body').on('click', '#start-over', function() {
     $('#countdown').removeClass('ended').data('countdown').update(+(new Date) + 2000).start();
 
     Bopit.restart();

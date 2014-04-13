@@ -1,11 +1,11 @@
 var Bopit = {
-	counter: 0,
-	speed: 0,
-	option: 1,
-	action: '',
 	$counter: $('#counter'),
 	$action: $('#action'),
 	$message: $('#message'),
+	action: '',
+	counter: 0,
+	option: 1,
+	speed: 0,
 
 	advance: function() {
 		this.$message.html('');
@@ -29,7 +29,7 @@ var Bopit = {
 	loss: function() {
 		this.$action.html('');
 		this.$counter.css({'background-color': '#c0392b', 'color': '#FFFFFF'});
-		this.$message.html('You lose<br /><a href="#" id="start-over">Start Over</a>');
+		this.$message.html('You lose<br /><button id="start-over" class="btn btn-success">Start Over</button>');
 	},
 	restart: function() {
 		this.counter = 0;
