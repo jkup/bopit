@@ -5,8 +5,11 @@ var Bopit = {
 	action: '',
 	$counter: $('#counter'),
 	$action: $('#action'),
+	$message: $('#message'),
 
 	advance: function() {
+		this.$message.html('');
+
 		// generate random number
 		option = this.random();
 
@@ -23,11 +26,14 @@ var Bopit = {
 	random: function() {
 		return Math.floor((Math.random() * 3) + 1);
 	},
+	loss: function() {
+		this.$action.html('');
+		this.$counter.css({'background-color': '#c0392b', 'color': '#FFFFFF'});
+		this.$message.html('You lose<br /><a href="#" id="start-over">Start Over</a>');
+	},
 	restart: function() {
 		this.counter = 0;
 		this.$counter.html(this.counter);
-
-		console.log('You lose');
 
 		this.advance();
 	},
