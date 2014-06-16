@@ -11,11 +11,36 @@ body {
 #game {
 	list-style: none;
 }
-#game button {
-	margin-left: 25px;
-	width: 25%;
-	height: 50px;
-}
-button {
+#game li {
 	float: left;
+}
+
+.twist {
+	width: 0;
+	height: 0;
+	text-indent: 50px;
+	line-height: 0px;
+	border-top: 75px solid transparent;
+	border-right: 100px solid #f0ad4e;
+	border-bottom: 75px solid transparent;
+}
+
+.bop {
+	width: 0;
+	height: 0;
+	text-indent: -12px;
+	margin-top: 150px;
+	border-left: 75px solid transparent;
+	border-right: 75px solid transparent;
+	border-top: 100px solid #5bc0de;
+}
+
+.pull {
+	width: 0;
+	height: 0;
+	text-indent: -75px;
+	line-height: 0px;
+	border-top: 75px solid transparent;
+	border-left: 100px solid #d9534f;
+	border-bottom: 75px solid transparent;
 }
